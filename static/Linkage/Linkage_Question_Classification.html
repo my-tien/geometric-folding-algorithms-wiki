@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Linkage Question Classification</title>
+	<meta name="generator" content="Zim 0.75.2">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="navigation">
+			<input id="SearchInput" type="search" name="searchTerm" placeholder="search…"/>
+			<div id="SearchResults" class="search-dropdown" hidden></div>
+			<ul>
+				<li><a href="/index.html" title="Table of Contents" class="page">Table of Contents</a></li>
+			</ul>
+			<ul>
+<li><a href="../Applications.html" title="Applications" class="page">Applications</a></li>
+<li><a href="../Content_Classification.html" title="Content Classification" class="page">Content Classification</a></li>
+<li><a href="../Design_Problems.html" title="Design Problems" class="page">Design Problems</a></li>
+<li><a href="../Foldability_Questions.html" title="Foldability Questions" class="page">Foldability Questions</a></li>
+<li><a href="../Geometric_Folding_toolset.html" title="Geometric Folding toolset" class="page">Geometric Folding toolset</a></li>
+<li><a href="../Kempe_Universality.html" title="Kempe Universality" class="page">Kempe Universality</a></li>
+<li><a href="../Linkage.html" title="Linkage" class="page">Linkage</a>
+<ul>
+<li><a href="./Linkage_Classification.html" title="Linkage Classification" class="page">Linkage Classification</a></li>
+<li><a href="./Linkage_Configuration.html" title="Linkage Configuration" class="page">Linkage Configuration</a></li>
+<li><b>Linkage Question Classification</b></li>
+<li><a href="./self-crossing.html" title="self-crossing" class="page">self-crossing</a></li>
+</ul></li>
+<li><a href="../Map_Folding.html" title="Map Folding" class="page">Map Folding</a></li>
+<li><a href="../Origami_Design.html" title="Origami Design" class="page">Origami Design</a></li>
+<li><a href="../Polygon_Folding.html" title="Polygon Folding" class="page">Polygon Folding</a></li>
+<li><a href="../Ruler_Folding.html" title="Ruler Folding" class="page">Ruler Folding</a></li>
+<li><a href="../Unfolding_to_Net.html" title="Unfolding to Net" class="page">Unfolding to Net</a></li>
+</ul>
+
+		</div>
+		<div id="content">
+			<h1>Linkage Question Classification <a name='Linkage:Linkage Question Classification'></a></h1>
+
+			<p>
+Created Samstag 27 Juli 2024
+</p>
+<br>
+<p>
+Questions asked about linkages can be classified in the following:
+</p>
+<br>
+<ul>
+<li><b>Geometric issue</b>
+<ul>
+<li><i>reconfiguration</i>: given an initial <a href="./Linkage_Configuration.html" title="configuration" class="page">configuration</a> <img src="./Linkage_Question_Classification/equation001.png"> and a final configuration <img src="./Linkage_Question_Classification/equation002.png">, can the linkage be continuously reconfigured from <img src="./Linkage_Question_Classification/equation001.png"> to <img src="./Linkage_Question_Classification/equation002.png">, keeping all links rigid (i.e. their original length), staying within the ambient space (e.g. a 2D plane), without violating any imposed intersection conditions? If yes, the linkage is in a <i>legal</i> configuration.</li>
+<li><i>reachability</i>: Whether a particular point (usually a link endpoint) of a linkage can reach, i.e. coincide with, a given point of the ambient space. Here the configuration achieving the reaching is considered irrelevant.</li>
+<li><i>locking</i>: Are every two legal configurations of a linkage connected in the configuration space or might a linkage be <i>locked</i> or "stuck" in one component of the space and thereby isolated from configurations in another component?</li>
+</ul></li>
+<li><b>Answer desired</b>
+<ul>
+<li><i>Decision problems</i> seek yes/no answers, e.g. »can the arm reach this point?«</li>
+<li><i>Path planning problems</i> require more in the case of »yes«: an explicit path through the configuration space that achieves the reconfiguration.</li>
+</ul></li>
+<li><b>Complexity bound sought</b>
+<ul>
+<li>For path planning problems, the combinatorial complexity of the path may be of interest, e.g. the number of constant-degree piecewise-algebraic arcs composing the path</li>
+<li>In general the algorithmic computational complexity is the primary measure, e.g. <i>O</i>(<i>n<sup>p</sup>), Ω</i>(<i>n<sup>q</sup></i>), NP-complete, NP-hard, PSPACE-complete, PSPACE-hard, etc.</li>
+</ul></li>
+</ul>
+
+
+			<br>
+			<span class="backlinks">
+			</span>
+
+			
+		</div>
+	</div>
+
+	<script src="/js/search.mjs" type="module"></script>
+</body>
+</html>

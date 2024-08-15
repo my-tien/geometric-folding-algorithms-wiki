@@ -1,8 +1,6 @@
-import Fuse from "/js/fuse.basic.min.mjs";
-
-const indexObj = await fetch('/wiki-index.json')
+const indexObj = await fetch('/~toffi-fee/gfalop-wiki/wiki-index.json')
     .then((response) => { return response.json(); });
-const wiki = await fetch('/wiki.json')
+const wiki = await fetch('/~toffi-fee/gfalop-wiki/wiki.json')
     .then((response) => { return response.json(); });
 
 const searchIndex = Fuse.parseIndex(indexObj);
@@ -43,7 +41,7 @@ addEventListener("input", (event) => {
         if (results.length > 0) {
             for (const result of results) {
                 const resultLink = document.createElement("a");
-                resultLink.href = `${window.location.origin}/${result.item.path}`;
+                resultLink.href = `${window.location.origin}/~toffi-fee/gfalop-wiki/${result.item.path}`;
                 resultLink.className = 'search-result'
                 
                 const resultText = document.createElement("div");
